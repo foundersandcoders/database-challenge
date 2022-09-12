@@ -1,4 +1,4 @@
-# Learn SQLite with Node
+# Database challenge
 
 Practice using a SQLite database to power a Node/Express web app.
 
