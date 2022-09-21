@@ -10,13 +10,10 @@ test("listProducts() returns all products", () => {
     `received ${products.length} products, expected 77`
   );
   const product = products[0];
-  const expected = {
-    id: 1,
-    name: "Chai",
-    quantity_per_unit: "10 boxes x 20 bags",
-    unit_price: 18,
-    units_in_stock: 39,
-    units_on_order: 0,
-  };
-  assert.deepEqual(product, expected);
+  assert.equal(product.id, 1);
+  assert.equal(product.name, "Chai");
+  assert.equal(product.quantity_per_unit, "10 boxes x 20 bags");
+  assert.ok(product.unit_price);
+  assert.equal(product.units_in_stock, 39);
+  assert.equal(product.units_on_order, 0);
 });
