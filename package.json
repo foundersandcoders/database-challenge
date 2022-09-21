@@ -1,10 +1,15 @@
 {
   "scripts": {
-    "start": "DBFILE=db.sqlite node server.js",
-    "dev": "DBFILE=db.sqlite nodemon server.js",
-    "seed": "DBFILE=db.sqlite node database/seed.js",
-    "test": "node --no-warnings --test",
-    "test:products": "node --no-warnings --test test/products.test.js"
+    "start": "DB_FILE=db.sqlite node server.js",
+    "dev": "DB_FILE=db.sqlite nodemon server.js",
+    "seed": "DB_FILE=db.sqlite node src/database/seed.js",
+    "test": "DB_FILE=test.sqlite node -r ./src/database/seed.js --no-warnings --test",
+    "test:1": "DB_FILE=test.sqlite node -r ./src/database/seed.js --no-warnings test/one.test.js",
+    "test:2": "DB_FILE=test.sqlite node -r ./src/database/seed.js --no-warnings test/two.test.js",
+    "test:3": "DB_FILE=test.sqlite node -r ./src/database/seed.js --no-warnings test/three.test.js",
+    "test:4": "DB_FILE=test.sqlite node -r ./src/database/seed.js --no-warnings test/four.test.js",
+    "test:5": "DB_FILE=test.sqlite node -r ./src/database/seed.js --no-warnings test/five.test.js",
+    "test:6": "DB_FILE=test.sqlite node -r ./src/database/seed.js --no-warnings test/six.test.js"
   },
   "dependencies": {
     "better-sqlite3": "^7.5.3",

@@ -7,10 +7,9 @@ const select_products = db.prepare(/*sql*/ `
     id,
     name,
     quantity_per_unit,
-    --FORMAT('$%.2f', unit_price),
-    unit_price,
+    FORMAT('£%.2f', unit_price) AS unit_price,
     units_in_stock,
-    unit_price * units_in_stock AS stock_value,
+    FORMAT('£%.2f', unit_price * units_in_stock) AS stock_value,
     units_on_order
   FROM products
 `);
