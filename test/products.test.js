@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert");
-const model = require("../model/products.js");
+const model = require("../src/model/products.js");
 
 test("listProducts() returns all products", () => {
   const products = model.listProducts();
@@ -36,7 +36,7 @@ test("searchProducts can match a single product", () => {
   assert.deepEqual(products[0], expected);
 });
 
-test("searchProducts can match many products", async (t) => {
+test("searchProducts can match many products", async () => {
   const products = model.searchProducts("ch");
   assert.equal(
     products.length,
