@@ -14,6 +14,8 @@ Make sure you have Git and Node (v18) installed.
 
 This app already has the routes and templates created. Your job is to fill out the model functions so the routes can access the data they need.
 
+Note: you won't be able to load pages without errors until you've completed the challenges below.
+
 ## Checking your work
 
 Each challenge has associated unit tests. You can either run all the tests with `npm test`, or each individual challenge's tests with `npm run test:1`, `npm run test:2` etc.
