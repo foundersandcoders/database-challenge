@@ -56,7 +56,7 @@ This app includes a database for a fake business. It includes information on the
 
 Write and export a new function named `listProducts` in `model/products.js`. This function should retrieve all products from the `products` DB table and return the `id`, `name`, `quantity_per_unit`, `unit_price`, `units_in_stock` and `units_on_order` columns.
 
-This function is used in `routes/products.js`. Once you've finished it you should be able to see a table of all products if you visit the `/products` route in your browser.
+This function is used in `routes/products.js`. Once you've finished it you should be able to see a table of all products if you visit the `/` route in your browser.
 
 ## Challenge 2: Search products
 
