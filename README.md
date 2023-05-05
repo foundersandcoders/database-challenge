@@ -6,7 +6,7 @@ Practice using a SQLite database to power a Node/Express web app.
 
 Make sure you have Git and Node (v18) installed.
 
-1. Clone this repo and `cd` into the directory
+1. [Use this template](https://github.com/foundersandcoders/database-challenge/generate), clone your copy, cd into it
 1. Run `npm install` to install all the dependencies
 1. Run `npm run seed` to seed the database with some example data
 1. Run `npm run dev` to start the server.  
